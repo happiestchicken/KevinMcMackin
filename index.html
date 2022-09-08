@@ -11,6 +11,9 @@
     <script src="https://kit.fontawesome.com/de10a06bee.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylespythonlearning.css">
+    <link rel="stylesheet" href="stylescs50learning.css">
+    <link rel="stylesheet" href="learningsection.css">
   </head>
   <body>
     <section>
@@ -29,12 +32,14 @@
       </header>
     </section>
     <main>
+      <!--welcome section-->
       <section class="section" id="welcome-section">
         <h1 class="welcome-title">Web Development Potfolio</h1>
         <p class="welcome-name">Kevin McMackin</p>
       </section>
+      <!--projects section-->
       <section id="projects">
-        <div class="projects-whole"></div>
+        <div class="projects-whole">
             <h1 class="project-title">Project Highlights</h1>
             <div class="projects-grid">
                 <a id="profile-link" target="_blank" class="project-boxes" href="https://www.youtube.com/">
@@ -48,52 +53,196 @@
             </div>
         </div>
       </section>
+      <!--learning section-->
       <section class="section" id="learning-process">
-        <div id="column-one">
+          <!--CS50 learning-->
+          <div id="cs50-container">
+            <div class="dropdown">
+              <button class="dropbtn">Path <i class="fa-solid fa-square-caret-down"></i></a></button>
+              <div class="dropdown-content">
+                <a id="CS50drop" href="#learning-process" onclick="CS50_appear()">Harvard's CS50</a>
+                <a id="python-drop" href="#learning-process" onclick="python_appear()">Python</a>
+                <a id="java-drop" href="#learning-process" onclick="java_appear()">Java</a>
+                <a id="js-drop" href="#learning-process" onclick="js_appear()">JavaScript</a>
+              </div>
+            </div>
+            <div class="cert-pics">
+              <img src="./pics/cs50 cert.jpg" class="photos">
+              <div class="button-container-container">
+                <a href="https://www.edx.org/course/introduction-computer-science-harvardx-cs50x" target="_blank">
+                  <div class="button-container">
+                    <p class="web-button-text">CS50 Website<i class="fa-solid visit-site fa-square-arrow-up-right"></i></p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="text-col-2">
+                <p class="description-text"><b>Programming languages</b> covered:</p>
+                <ul class="list">
+                  <li><b>C</b></li>
+                  <li><b>Python</b></li>
+                  <li><b>SQL & MySQL</b></li>
+                  <li><b>HTML</b></li>
+                  <li><b>CSS</b></li>
+                  <li><b>JavaScript</b></li>
+                </ul>
+            </div>
+            <div class="text-col-1">
+              <p class="description-text">
+                CS50 is an introductory-level computer
+                science class taught at Harvard University which has become one of the schools largest classes on campus.</p>
+              <p class="description-text">
+                CS50 has been a hit amungst students on-campus for years, and since becoming
+                available online for students worldwide, has gained
+                internet notoriety within the computer science atmosphere for its content, accessibility and 
+                beginner-friendly approach.
+              </p>
+            </div>
+            <div class="learning-title">
+              <h5>CS50 Introduction to Computer Science</h5>
+            </div>
+          </div>
+          <!--python learning-->
+          <div id="python-container">
+              <div class="dropdown">
+                <button class="dropbtn">Path <i class="fa-solid fa-square-caret-down"></i></a></button>
+                <div class="dropdown-content">
+                  <a id="CS50drop" href="#learning-process" onclick="CS50_appear()">Harvard's CS50</a>
+                  <a id="python-drop" href="#learning-process" onclick="python_appear()">Python</a>
+                  <a id="java-drop" href="#learning-process" onclick="java_appear()">Java</a>
+                  <a id="js-drop" href="#learning-process" onclick="js_appear()">JavaScript</a>
+                </div>
+              </div>
+              <div class="cert-pics">
+                <img src="./pics/python cert_page-0001.jpg" class="photos">
+                  <a href="https://www.edx.org/course/introduction-computer-science-harvardx-cs50x" target="_blank">
+                    <div class="button-container">
+                      <p class="web-button-text">Educative.io<i class="fa-solid visit-site fa-square-arrow-up-right"></i></p>
+                    </div>
+                  </a>
+              </div>
+              <div class="text-col-2">
+                <p class="description-text"></p>
+              </div>
+              <div class="text-col-1">
+                <p class="description-text">This course, offered through Educative.io teaches students
+                  everything they need to develop projects using the worlds most popular coding language.
+                </p>
+                <p class="description-text">I took this course to learn what is considered <b>the most 
+                  intuitive and versatile coding language</b> used in industry today. Through 
+                  leaning the basics of python, I was also able to practice my programming 
+                  skills in myriad concepts such as:</p>
+                  <ul class="list">
+                    <li><b>Conditional statements</b></li>
+                    <li><b>Data Types & Variables</b></li>
+                    <li><b>Functions</b></li>
+                    <li><b>Data Structures</b></li>
+                    <li><b>Libraries</b></li>
+                  </ul>
+              </div>
+              <div class="learning-title">
+                <h5>Python <span class="roman">III</span></h5>
+              </div>
+          </div>
+          <!--Java learning-->
+          <div id="java-container">
+            <div class="dropdown">
+              <button class="dropbtn">Path <i class="fa-solid fa-square-caret-down"></i></a></button>
+              <div class="dropdown-content">
+                <a id="CS50drop" href="#learning-process" onclick="CS50_appear()">Harvard's CS50</a>
+                <a id="python-drop" href="#learning-process" onclick="python_appear()">Python</a>
+                <a id="java-drop" href="#learning-process" onclick="java_appear()">Java</a>
+                <a id="js-drop" href="#learning-process" onclick="js_appear()">JavaScript</a>
+              </div>
+            </div>
+            <div class="cert-pics">
+              <img src="./pics/Java cert.png" class="photos">
+                <a href="https://www.edx.org/course/introduction-computer-science-harvardx-cs50x" target="_blank">
+                  <div class="button-container">
+                  <p class="web-button-text">Educative.io<i class="fa-solid visit-site fa-square-arrow-up-right"></i></p>
+                  </div>
+                </a>
+            </div>
+            <div class="text-col-2">
+              <p class="description-text">
+                Some of the topics covered in this course: 
+              </p>
+              <ul class="list">
+                <li>Object oriented programming
+                  <ul class="sublist">
+                    <li class="top-list">Classes & Objects</li>
+                    <li>Data hiding</li>
+                    <li>Inheritance</li>
+                    <li>Polymorphism</li>
+                    <li>Abstraction & Interfaces</li>
+                    <li class="bottom-list">Aggregation & Composition</li>
+                  </ul>
+                </li>
+                <li>Recursion</li>
+                <li>Multithreading
+                  <ul class="sublist">
+                    <li class="top-list">Concurrency & parallelism</li>
+                    <li>Synchronous & asynchronous operations</li>
+                    <li>Throughput & latency</li>
+                    <li class="bottom-list">Cooperative & preemptive multitasking</li>
+                  </ul>
+                </li>
+                <li>Java memory model</li>
+              </ul>
+            </div>
+            <div class="text-col-1">
+              <p class="description-text">Java for programmers (through Educative.io) was included 
+                as part of my learning path as it covered not only 
+                the basics of Java programming, but also explained how the code we write affects processing time,
+                memory allocation and other low level concepts. These concepts, in turn can be applied to write code which is
+                more efficient for computers to process. <b>As a result, this course has aided me in writing code which creates a more frictionless experience for the end user.</b></p>
+            </div>
+            <div class="learning-title">
+              <h5>Java for Programmers</h5>
+            </div>
+        </div>
+        <!--JS learning-->
+        <div id="js-container">
           <div class="dropdown">
             <button class="dropbtn">Path <i class="fa-solid fa-square-caret-down"></i></a></button>
             <div class="dropdown-content">
-              <a id="CS50drop" onclick="CS50_appear()">Harvard's CS50</a>
-              <a id="python-drop" onclick="python_appear()">Python</a>
-              <a href="#">Link 3</a>
+              <a id="CS50drop" href="#learning-process" onclick="CS50_appear()">Harvard's CS50</a>
+              <a id="python-drop" href="#learning-process" onclick="python_appear()">Python</a>
+              <a id="Java-drop" href="#learning-process" onclick="java_appear()">Java</a>
+              <a id="js-drop" href="#learning-process" onclick="js_appear()">JavaScript</a>
             </div>
           </div>
-        </div>
-        <div id="column-two">
-          <div id="CS50-display">
-            <div id="cs50-description">
-              <h5>CS50 Introduction to Computer Science</h5>
-              <p class="description-text">CS50 is an intro-level computer science class taught by David Malan from Harvard University.</p>
-              <p class="description-text">Offered through EDx since , CS50 is world renowned in the computer science community for its</p>
-              <!--could change the next line to be an a element which would let users get the right click link menu-->
-              <div class="button-container-container">
-                <a href="https://www.edx.org/course/introduction-computer-science-harvardx-cs50x" target="_blank">
-                  <div class="button-container">
-                  <p>CS50 Website<i class="fa-solid visit-site fa-square-arrow-up-right"></i></p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <img src="./pics/cs50 cert.jpg" id="cs50-photo">
+          <div class="cert-pics">
+            <img src="./pics/JS cert.PNG" class="photos">
+              <a href="https://www.edx.org/course/introduction-computer-science-harvardx-cs50x" target="_blank">
+                <div class="button-container">
+                <p class="web-button-text">Educative.io<i class="fa-solid visit-site fa-square-arrow-up-right"></i></p>
+                </div>
+              </a>
           </div>
-          <div id="python-display">
-            <div id="python-description">
-              <h5>Python <span class="roman">III</span></h5>
-              <p class="description-text">CS50 is an intro-level computer science class taught by David Malan from Harvard University.</p>
-              <p class="description-text">Offered through EDx since , CS50 is world renowned in the computer science community for its</p>
-              <!--could change the next line to be an a element which would let users get the right click link menu-->
-              <div class="button-container-container">
-                <a href="https://www.edx.org/course/introduction-computer-science-harvardx-cs50x" target="_blank">
-                  <div class="button-container">
-                  <p>Educative.io<i class="fa-solid visit-site fa-square-arrow-up-right"></i></p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <img src="./pics/python cert_page-0001.jpg" id="python-photo">
+          <div class="text-col-2">
+            <p class="description-text">
+              Some of the most relevant modules taught within this course: 
+            </p>
+            <ul class="list">
+              <li>JavaScript ES6 Notation</li>
+              <li>Regular Expressions (regex)</li>
+              <li>Data Structures</li>
+              <li>Algorithms</li>
+              <li>Functional Programming</li>
+            </ul>
           </div>
-        </div>
+          <div class="text-col-1">
+            <p class="description-text">Given how important JavaScript is in both front-end and 
+              back-end applications, I took this course to learn the basic syntax of the language,
+               and to enhance my programming skills of one of the most ubiquitous programming languages.</p>
+          </div>
+          <div class="learning-title">
+            <h5>JavaScript Algorithms & Data Structures</h5>
+          </div>
+      </div>
       </section>
+      <!--contact section-->
       <section class="section" id="contact">
         <h1 class="contact-title">Let's work together...</h1>
         <p class="contact-subtitle">How do you take your coffee?</p>

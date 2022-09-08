@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"/>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <meta name='viewport' content="width=device-width, initial-scale=1.0">
+    <title>Kevin McMackin's Portfolio</title>
+    <script src="https://kit.fontawesome.com/de10a06bee.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylespythonlearning.css">
+    <link rel="stylesheet" href="stylescs50learning.css">
+    <link rel="stylesheet" href="learningsection.css">
+  </head>
+  <body>
+    <section>
+      <header>
+        <nav class="signature">
+          <img src="./pics/Untitled_Artwork.png" id="signature"/>
+        </nav>
+        <nav class="nav">
+          <ul class="navlist">
+            <li><a href="#welcome-section">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#learning-process">Leaning Path</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    </section>
+    <main>
+      <!--welcome section-->
+      <section class="section" id="welcome-section">
+        <h1 class="welcome-title">Web Development Potfolio</h1>
+        <p class="welcome-name">Kevin McMackin</p>
+      </section>
+      <!--projects section-->
+      <section id="projects">
+        <div class="projects-whole"></div>
+            <h1 class="project-title">Project Highlights</h1>
+            <div class="projects-grid">
+                <a id="profile-link" target="_blank" class="project-boxes" href="https://www.youtube.com/">
+                    <img class="project-images" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg">
+                    <p class="project-titles"><span class="project-title-appear"><i class="fa-solid fa-arrow-right-long"></i></span>Programmer interview study<span class="project-title-appear"><i class="fa-solid fa-arrow-left-long"></i></span></p>
+                </a>
+                <a id="profile-link" target="_blank" class="project-boxes" href="https://www.youtube.com/">
+                    <img class="project-images" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png">
+                    <p class="project-titles"><span class="project-title-appear"><i class="fa-solid fa-arrow-right-long"></i></span>Random quote machine<span class="project-title-appear"><i class="fa-solid fa-arrow-left-long"></i></span></p>
+                </a>
+            </div>
+        </div>
+      </section>
+      <!--learning section-->
+      <section class="section" id="learning-process">
+        <div id="column-one">
+          <div class="dropdown">
+            <button class="dropbtn">Path <i class="fa-solid fa-square-caret-down"></i></a></button>
+            <div class="dropdown-content">
+              <a id="CS50drop" href="#learning-process" onclick="CS50_appear()">Harvard's CS50</a>
+              <a id="python-drop" href="#learning-process" onclick="python_appear()">Python</a>
+              <a id="java-drop" href="#learning-process" onclick="java_appear()">Java</a>
+            </div>
+          </div>
+        </div>
+        <div id="column-two">
+          <!--CS50 learning-->
+          <div id="cs50-container">
+            <div class="cert-pics">
+              <img src="./pics/cs50 cert.jpg" id="cs50-photo">
+              <div class="button-container-container">
+                <a href="https://www.edx.org/course/introduction-computer-science-harvardx-cs50x" target="_blank">
+                  <div class="button-container">
+                    <p>CS50 Website<i class="fa-solid visit-site fa-square-arrow-up-right"></i></p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="text-col-2">
+              <p class="description-text">Some of the notable concepts taught in the course include:</p>
+                <ul class="list">
+                  <li>Data structures and algorithms</li>
+                  <li>Low-level computer operations:
+                    <ul class="sublist">
+                      <li class="top-list">Memory allocation</li>
+                      <li>Preprocessing</li>
+                      <li>Compiling</li>
+                      <li>Assembly</li>
+                      <li>Linking</li>
+                    </ul>
+                  </li>
+                </ul>
+                <p class="description-text">The course covers the following programming languages, with varying degrees of depth:</p>
+                <ul class="list">
+                  <li>C</li>
+                  <li>Python</li>
+                  <li>SQL</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+            </div>
+            <div class="text-col-1">
+              <p class="description-text">CS50 is an introductory-level computer
+                science class taught by David Malan at Harvard University.</p>
+              <p class="description-text">Offered through EDx since , CS50 is world renowned in the computer science community for its</p>
+              <p class="description-text">The course is taught using a bottom up approach to computer science, ensuring that student first have a deep understanding of
+                how computers allocate memory and store data before moving onto more advanced concepts such as sorting algorithms and 
+              </p>
+            </div>
+            <div class="learning-title">
+              <h5>CS50 Introduction to Computer Science</h5>
+            </div>
+          </div>
+          <!--python learning-->
+          <div id="python-container">
+              <div class="cert-pics">
+                <img src="./pics/python cert_page-0001.jpg" id="cs50-photo">
+                  <a href="https://www.edx.org/course/introduction-computer-science-harvardx-cs50x" target="_blank">
+                    <div class="button-container">
+                    <p>Educative.io<i class="fa-solid visit-site fa-square-arrow-up-right"></i></p>
+                    </div>
+                  </a>
+              </div>
+              <div class="text-col-2">
+                <p class="description-text">Some of the notable concepts taught in the course include:</p>
+                <ul class="list">
+                  <li>Data structures and algorithms</li>
+                  <li>Low-level computer operations:
+                    <ul class="sublist">
+                      <li class="top-list">Memory allocation</li>
+                      <li>Preprocessing</li>
+                      <li>Compiling</li>
+                      <li>Assembly</li>
+                      <li>Linking</li>
+                    </ul>
+                  </li>
+                </ul>
+                <p class="description-text">The course covers the following programming languages, 
+                  with varying degrees of depth:</p>
+                  <ul class="list">
+                    <li>C</li>
+                    <li>C</li>
+
+                  </ul>
+              </div>
+              <div class="text-col-1">
+                <p class="description-text">CS50 is an intro-level computer science class taught by David Malan from Harvard University.</p>
+                <p class="description-text">Offered through EDx since , CS50 is world renowned in the computer science community for its</p>
+              </div>
+              <div class="learning-title">
+                <h5>Python <span class="roman">III</span></h5>
+              </div>
+          </div>
+          <!--Java learning-->
+          <div id="java-container">
+            <div class="cert-pics">
+              <img src="./pics/python cert_page-0001.jpg" id="cs50-photo">
+                <a href="https://www.edx.org/course/introduction-computer-science-harvardx-cs50x" target="_blank">
+                  <div class="button-container">
+                  <p>Educative.io<i class="fa-solid visit-site fa-square-arrow-up-right"></i></p>
+                  </div>
+                </a>
+            </div>
+            <div class="text-col-2">
+
+
+            </div>
+            <div class="text-col-1">
+            </div>
+            <div class="learning-title">
+              <h5>Java for Programmers</h5>
+            </div>
+        </div>
+        </div>
+      </section>
+      <!--contact section-->
+      <section class="section" id="contact">
+        <h1 class="contact-title">Let's work together...</h1>
+        <p class="contact-subtitle">How do you take your coffee?</p>
+        <div class="social-icons-class">
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://github.com/" target="_blank">
+                <i class="fab fa-github"></i>
+            <a href="https://www.linkedin.com/in/kevin-mcmackin/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+      </section>
+    </main>
+    <footer>
+        
+    </footer>
+  </body>
+</html>
