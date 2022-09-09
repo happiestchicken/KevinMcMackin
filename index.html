@@ -7,14 +7,18 @@
     <script src="https://kit.fontawesome.com/de10a06bee.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="learningsection.css">
+    <link rel="stylesheet" href="learning_section_styles.css">
+    <link rel="stylesheet" href="projects_section_styles.css">
+    <link rel="stylesheet" href="contact_section_styles.css">
+    <link rel="stylesheet" href="welcome_section_styles.css">
+
     <link href="https://fonts.googleapis.com/css?family=Raleway:700&amp;display=swap" rel="stylesheet">
   </head>
   <body>
     <section>
       <header>
         <nav class="signature">
-          <img src="./pics/Untitled_Artwork.png" id="signature"/>
+          <img src="./pics/signature_white.png" id="signature"/>
         </nav>
         <nav class="nav">
           <ul class="navlist">
@@ -24,28 +28,33 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
+        <div id="nav-shadow"></div>
       </header>
     </section>
     <main>
       <!--welcome section-->
       <section class="section" id="welcome-section">
-        <h1 class="welcome-title">Web Development Potfolio</h1>
-        <p class="welcome-name">Kevin McMackin</p>
+        <div id="welcome-div">
+          <h1 id="welcome-title">Web Development Potfolio</h1>
+          <p id="welcome-name">Kevin McMackin</p>
+        </div>
       </section>
       <!--projects section-->
-      <section id="projects">
-        <div class="projects-whole">
-            <h1 class="project-title">Project Highlights</h1>
-            <div class="projects-grid">
-                <a id="profile-link" target="_blank" class="project-boxes" href="https://www.youtube.com/">
-                    <img class="project-images" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg">
-                    <p class="project-titles"><span class="project-title-appear"><i class="fa-solid fa-arrow-right-long"></i></span>Programmer interview study<span class="project-title-appear"><i class="fa-solid fa-arrow-left-long"></i></span></p>
-                </a>
-                <a id="profile-link" target="_blank" class="project-boxes" href="https://www.youtube.com/">
-                    <img class="project-images" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png">
-                    <p class="project-titles"><span class="project-title-appear"><i class="fa-solid fa-arrow-right-long"></i></span>Random quote machine<span class="project-title-appear"><i class="fa-solid fa-arrow-left-long"></i></span></p>
-                </a>
-            </div>
+      <section class="section" id="projects">
+        <div class="projects-grid-container">
+          <h1 id="project-title">Project Highlights</h1>
+          <div id="project-one" class="project-boxes">
+            <a target="_blank" class="profile-link" href="https://www.youtube.com/">
+              <img class="project-images" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png">
+              <p class="project-titles"><span class="project-title-appear"><i class="fa-solid fa-arrow-right-long"></i></span>Programmer interview study<span class="project-title-appear"><i class="fa-solid fa-arrow-left-long"></i></span></p>
+            </a>
+          </div>
+          <div id="project-two" class="project-boxes">
+            <a target="_blank" class="profile-link" href="https://www.youtube.com/">
+              <img class="project-images" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png">
+              <p class="project-titles"><span class="project-title-appear"><i class="fa-solid fa-arrow-right-long"></i></span>Random quote machine<span class="project-title-appear"><i class="fa-solid fa-arrow-left-long"></i></span></p>
+          </a>
+          </div>
         </div>
       </section>
       <!--learning section-->
@@ -87,9 +96,10 @@
                 CS50 is an introductory-level computer
                 science class taught at Harvard University which has become one of the schools largest classes on campus.</p>
               <p class="description-text">
-                CS50 has been a hit amungst students on-campus for years, and since becoming
-                available online for students worldwide, has gained
-                internet notoriety within the computer science atmosphere for its content, accessibility and 
+                CS50 has been a hit amungst students on-campus for years, and has recently gained internet notoriety within
+                the computer science community since becoming
+                available online for students worldwide.
+                content, accessibility and 
                 beginner-friendly approach.
               </p>
             </div>

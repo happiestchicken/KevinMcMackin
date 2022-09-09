@@ -261,7 +261,7 @@
      .dropdown { grid-area: 2/1/3/4;}
 
     #learning-process {
-        height: 150vh;
+        height: 160vh;
     }
     .dropdown {
         display: flex;

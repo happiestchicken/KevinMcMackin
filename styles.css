@@ -4,6 +4,10 @@
     --lavender: #8dbafe;
     --skyblue: #21aee4;
     --aqua: #85f1fe;
+    --bluegrad: #0071cf;
+    --greengrad: #e3dc00;
+    --almostblack: #222222;
+    --lightgrey: #bbbbbb;
   }
 
   html {
@@ -38,16 +42,10 @@
     letter-spacing: -5px;
   }
 
-  @media (max-width: 700px) {
-    main {
-      margin-top: 18vh;
-    }
-  }
-
   /*nav bar*/
   .nav {
     display: flex;
-    z-index: 1;
+    z-index: 2;
     justify-content: flex-end;
     align-items: center;
     flex-direction: row;
@@ -55,25 +53,36 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 10vh;
-    background-color: var(--lavender);
-    box-shadow: 0 3px 0 var(--purple);
+    height: 70px;
+    background-color: var(--almostblack);
+  }
+
+  #nav-shadow {
+    position: fixed;
+    width: 100%;
+    height: 0.5vh;
+    background: linear-gradient(128deg, rgba(227,220,0,1) 0%, rgba(0,113,207,1) 100%);
+    margin: 0;
+    margin-top: 70px;
+    z-index: 2;
   }
 
   .signature {
     display: flex;
-    z-index: 2;
+    z-index: 3;
     justify-content: flex-start;
     position: fixed;
     top: 0;
     left: 0;
     width: 30%;
-    height: 10vh;
-    background-color: var(--lavender);
+    height: 70px;
+    margin: 0;
+    max-width: 20%;
   }
 
   #signature {
-    margin: 20px;
+    margin: 7px;
+    mix-blend-mode: multiply;
   }
   
   .navlist {
@@ -83,158 +92,30 @@
   
   .navlist a {
     display: block;
-    font-size: 1.2vw;
-    padding: 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1.8rem;
+    margin-top: 6px;
+    color: var(--bluegrad);
   }
 
   #signature {
     position: relative;  
   }
 
-  /*Welcome section*/
-  #welcome-section {
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(45deg, var(--skyblue), var(--purple))
-  }
-
-  .welcome-title {
-    font-family: Raleway, Helvetica;
-    font-size: 4vw;
-    color: black;
-    font-weight: bold;
-    overflow: hidden;
-  }
-
-  .welcome-name {
-    font-family: Raleway, Helvetica;
-    color: black;
-    font-size: 3vw;
-    font-weight: lighter;
-    font-style: italic;
-  }
-
-  /*Projects section*/
-  
-  #projects {
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(45deg, var(--skyblue), var(--purple));
-  }
-
-  .project-title {
-    position: relative;
-    font-family: Raleway, Helvetica;
-    border-bottom: 0.1rem solid black;
-    text-align: center;
-    font-size: 2vw;
-    margin-bottom: 60px;
-    margin-top: 40px;
-  }
-
-  .project-titles {
-    position: relative;
-    text-align: center;
-    top: 2px;
-    font-family: Raleway, Helvetica;
-    font-size: 1.2rem;
-  }
-
-  .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 4rem;
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
-    margin-bottom: 6rem;
-    column-gap: 30px;
-  }
-
-  .project-boxes {
-    background: grey;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    border-radius: 2px;
-  }
-
-  .project-images {
-    height: calc(100% - 6.8rem);
-    width: 90%;
-    object-fit: cover;
-    display: block;
-    margin: auto;
-    margin-top: 20px;
-  }
-
-  .project-title-appear {
-    color: grey;
-    text-align: center;
-    display: inline-block;
-    width: 40px;
-    position: relative;
-    bottom: 1px;
-  }
-
-  .fa-arrow-right-long {
-    margin-right: 10px;
-  }
-
-  .fa-arrow-left-long {
-    margin-left: 10px;
-  }
-
-  .fa-circle {
-    font-size: 8px;
-  }
-  
-  #profile-link:hover .project-title-appear {
-    color: var(--lavender);
-    transition: color 0.3s ease-out;
-  }
-
-  .projects-whole {
-    max-width: 70vw;
-}
-
-  /*contact section*/
-    #contact {
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(45deg, var(--skyblue), var(--purple))
-  }
-
-  .contact-title {
-    font-family: Raleway;
-    font-size: 8vh;
-    margin: 0;
-    margin-top: 100px;
+  @media (max-width: 1000px) {
+    #signature {
+      margin-top: 11px;
+      margin-left: 12px;
+      margin-bottom: 3px;
     }
-
-    .contact-subtitle {
-        font-family: Raleway;
-        font-size: 5vh;
-        margin: 5vh;
+    .signature {
+      height: 60px;
     }
-
-  .fab {
-    color: black;
-  }
-
-  .social-icons-class a{
-    font-size: 3.5rem;
-    margin-right: 40px;
+    .nav a {
+      padding: 0.6rem;
+      font-size: 0.7rem;
+    }
   }
 
   /*footer*/

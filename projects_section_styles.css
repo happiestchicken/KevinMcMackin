@@ -1,0 +1,143 @@
+/*Projects section*/
+  
+#projects {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, var(--skyblue), var(--purple));
+  }
+
+  #project-title {
+    display: relative;
+    font-family: Raleway, Helvetica;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 60px;
+    margin-top: 0px;
+    grid-area: 1/1/2/4;
+  }
+
+  .projects-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill);
+    gap: auto;
+    width: 100%;
+    max-width: 70vw;
+    justify-content: center;
+  }
+
+  #project-one {
+    grid-area: 2/1/3/2;
+  }
+
+  #project-two {
+    grid-area: 2/2/3/3;
+  }
+
+  .profile-link:hover .project-title-appear {
+    color: var(--lavender);
+    transition: color 0.3s ease-out;
+  }
+
+  .profile-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .project-boxes {
+    background: grey;
+    /* box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); */
+    height: 375px;
+    width: 500px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-images {
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+    margin: auto;
+  }
+
+  .project-titles {
+    position: relative;
+    text-align: center;
+    top: 2px;
+    font-family: Raleway, Helvetica;
+    font-size: 1.2rem;
+  }
+
+  .project-title-appear {
+    color: grey;
+    text-align: center;
+    display: inline-block;
+    width: 40px;
+    position: relative;
+  }
+
+  .fa-arrow-right-long {
+    margin-right: 10px;
+  }
+
+  .fa-arrow-left-long {
+    margin-left: 10px;
+  }
+
+  .fa-circle {
+    font-size: 8px;
+  }
+
+  @media (max-width: 1200px) {
+    .project-boxes {
+        background: grey;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        border-radius: 2px;
+        height: 300px;
+        width: 400px;
+        margin: 15px;
+    }
+
+    #projects {
+        height: 120vh;
+    }
+}
+
+@media (max-width: 900px) {
+    .project-boxes {
+        background: grey;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        border-radius: 2px;
+        height: 400px;
+        width: 500px;
+        margin: 15px;
+      }
+
+    #project-one {
+        grid-area: 2/1/3/2;
+      }
+    
+      #project-two {
+        grid-area: 3/1/4/2;
+      }
+
+    #project-title {
+        grid-area: 1/1/2/2;
+    }
+}
+
+@media (max-width: 700px) {
+  .project-boxes {
+    width: 350px;
+    height: 280px;
+  }
+}
