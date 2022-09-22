@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="projects_section_styles.css">
     <link rel="stylesheet" href="contact_section_styles.css">
     <link rel="stylesheet" href="welcome_section_styles.css">
-
     <link href="https://fonts.googleapis.com/css?family=Raleway:700&amp;display=swap" rel="stylesheet">
   </head>
   <body>
@@ -43,17 +42,21 @@
       <section class="section" id="projects">
         <div class="projects-grid-container">
           <h1 id="project-title">Project Highlights</h1>
-          <div id="project-one" class="project-boxes">
-            <a target="_blank" class="profile-link" href="https://www.youtube.com/">
-              <img class="project-images" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png">
-              <p class="project-titles"><span class="project-title-appear"><i class="fa-solid fa-arrow-right-long"></i></span>Programmer interview study<span class="project-title-appear"><i class="fa-solid fa-arrow-left-long"></i></span></p>
-            </a>
+          <div id="project-one" class="project-boxes module-border-wrap">
+            <div class="module">
+              <a target="_blank" class="profile-link" href="https://www.youtube.com/">
+                <img class="project-images" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png">
+                <p class="project-titles"><span class="project-title-appear"><i class="fa-solid fa-arrow-right-long"></i></span>Programmer interview study<span class="project-title-appear"><i class="fa-solid fa-arrow-left-long"></i></span></p>
+              </a>
+            </div>
           </div>
-          <div id="project-two" class="project-boxes">
-            <a target="_blank" class="profile-link" href="https://www.youtube.com/">
-              <img class="project-images" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png">
-              <p class="project-titles"><span class="project-title-appear"><i class="fa-solid fa-arrow-right-long"></i></span>Random quote machine<span class="project-title-appear"><i class="fa-solid fa-arrow-left-long"></i></span></p>
-          </a>
+          <div id="project-two" class="project-boxes module-border-wrap">
+            <div class="module">
+              <a target="_blank" class="profile-link" href="https://www.youtube.com/">
+                <img class="project-images" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png">
+                <p class="project-titles"><span class="project-title-appear"><i class="fa-solid fa-arrow-right-long"></i></span>Random quote machine<span class="project-title-appear"><i class="fa-solid fa-arrow-left-long"></i></span></p>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -62,8 +65,10 @@
           <!--CS50 learning-->
           <div id="cs50-container">
             <div class="dropdown">
-              <button class="dropbtn">Path <i class="fa-solid fa-square-caret-down"></i></a></button>
-              <div class="dropdown-content">
+              <div class="dropdown-color">
+                <button class="dropbtn">Path <i class="fa-solid fa-square-caret-down"></i></a></button>
+              </div>
+                <div class="dropdown-content">
                 <a id="CS50drop" href="#learning-process" onclick="CS50_appear()">Harvard's CS50</a>
                 <a id="python-drop" href="#learning-process" onclick="python_appear()">Python</a>
                 <a id="java-drop" href="#learning-process" onclick="java_appear()">Java</a>
@@ -71,7 +76,9 @@
               </div>
             </div>
             <div class="cert-pics">
-              <img src="./pics/cs50 cert.jpg" class="photos">
+              <div class="learning-image-div">
+                <img src="./pics/cs50 cert.jpg" class="photos">
+              </div>
               <div class="button-container-container">
                 <a href="https://www.edx.org/course/introduction-computer-science-harvardx-cs50x" target="_blank">
                   <div class="button-container">
@@ -110,21 +117,25 @@
           <!--python learning-->
           <div id="python-container">
               <div class="dropdown">
-                <button class="dropbtn">Path <i class="fa-solid fa-square-caret-down"></i></a></button>
-                <div class="dropdown-content">
-                  <a id="CS50drop" href="#learning-process" onclick="CS50_appear()">Harvard's CS50</a>
-                  <a id="python-drop" href="#learning-process" onclick="python_appear()">Python</a>
-                  <a id="java-drop" href="#learning-process" onclick="java_appear()">Java</a>
-                  <a id="js-drop" href="#learning-process" onclick="js_appear()">JavaScript</a>
+                <div class="dropdown-color">
+                  <button class="dropbtn">Path <i class="fa-solid fa-square-caret-down"></i></a></button>
                 </div>
+                  <div class="dropdown-content">
+                    <a id="CS50drop" href="#learning-process" onclick="CS50_appear()">Harvard's CS50</a>
+                    <a id="python-drop" href="#learning-process" onclick="python_appear()">Python</a>
+                    <a id="java-drop" href="#learning-process" onclick="java_appear()">Java</a>
+                    <a id="js-drop" href="#learning-process" onclick="js_appear()">JavaScript</a>
+                  </div>
               </div>
               <div class="cert-pics">
                 <img src="./pics/python cert_page-0001.jpg" class="photos">
+                <div class="button-container-container">
                   <a href="https://www.edx.org/course/introduction-computer-science-harvardx-cs50x" target="_blank">
                     <div class="button-container">
                       <p class="web-button-text">Educative.io<i class="fa-solid visit-site fa-square-arrow-up-right"></i></p>
                     </div>
                   </a>
+                </div>
               </div>
               <div class="text-col-2">
                 <p class="description-text"></p>
@@ -152,7 +163,9 @@
           <!--Java learning-->
           <div id="java-container">
             <div class="dropdown">
-              <button class="dropbtn">Path <i class="fa-solid fa-square-caret-down"></i></a></button>
+              <div class="dropdown-color">
+                <button class="dropbtn">Path <i class="fa-solid fa-square-caret-down"></i></a></button>
+              </div>
               <div class="dropdown-content">
                 <a id="CS50drop" href="#learning-process" onclick="CS50_appear()">Harvard's CS50</a>
                 <a id="python-drop" href="#learning-process" onclick="python_appear()">Python</a>
@@ -162,11 +175,13 @@
             </div>
             <div class="cert-pics">
               <img src="./pics/Java cert.png" class="photos">
+              <div class="button-container-container">
                 <a href="https://www.edx.org/course/introduction-computer-science-harvardx-cs50x" target="_blank">
                   <div class="button-container">
                   <p class="web-button-text">Educative.io<i class="fa-solid visit-site fa-square-arrow-up-right"></i></p>
                   </div>
                 </a>
+              </div>
             </div>
             <div class="text-col-2">
               <p class="description-text">
@@ -209,7 +224,9 @@
         <!--JS learning-->
         <div id="js-container">
           <div class="dropdown">
-            <button class="dropbtn">Path <i class="fa-solid fa-square-caret-down"></i></a></button>
+            <div class="dropdown-color">
+              <button class="dropbtn">Path <i class="fa-solid fa-square-caret-down"></i></a></button>
+            </div>
             <div class="dropdown-content">
               <a id="CS50drop" href="#learning-process" onclick="CS50_appear()">Harvard's CS50</a>
               <a id="python-drop" href="#learning-process" onclick="python_appear()">Python</a>
@@ -218,12 +235,14 @@
             </div>
           </div>
           <div class="cert-pics">
-            <img src="./pics/JS cert.PNG" class="photos">
+            <img src="./pics/JS cert.PNG" id="photos java-photo">
+            <div class="button-container-container">
               <a href="https://www.edx.org/course/introduction-computer-science-harvardx-cs50x" target="_blank">
                 <div class="button-container">
                 <p class="web-button-text">Educative.io<i class="fa-solid visit-site fa-square-arrow-up-right"></i></p>
                 </div>
               </a>
+            </div>  
           </div>
           <div class="text-col-2">
             <p class="description-text">
